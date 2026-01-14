@@ -1,0 +1,20 @@
+# Makefile for Expression Transformation Project
+
+PYTHON=python3
+SRC=src/Compiler1.py
+TESTDIR=tests
+
+run1:
+	$(PYTHON) $(SRC) < $(TESTDIR)/case1.txt
+
+run2:
+	$(PYTHON) $(SRC) < $(TESTDIR)/case2.txt
+
+run3:
+	$(PYTHON) $(SRC) < $(TESTDIR)/case3.txt
+
+run4:
+	$(PYTHON) $(SRC) < $(TESTDIR)/case4.txt
+
+
+test: run1 run2 run3 run4
